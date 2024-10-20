@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- nav full page -->
+    <nav class="flex nav_full">
+        <div class="container flex nav_container">
+            <div class="nav__logo_div"><a href="">Start Bootstrap</a></div>
+            <div class="nav__ul_div">
+                <ul class="flex nav__ul">
+                    <li><a href="#main__orange_section">About</a></li>
+                    <li><a href="#main_at_your_service">Services</a></li>
+                    <li><a href="#main_images_section">Portfolio</a></li>
+                    <li><a href="#main_form_section">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav full page -->
+
+    <!-- nav small version -->
+    <nav class="nav_small">
+        <div class="container flex nav_container">
+            <div class="flex nav__logo_div">
+                <a href="">Start Bootstrap</a>
+                <div id="nav__ul_div">
+                    <ul class="nav__ul">
+                        <li><a href="#main__orange_section">About</a></li>
+                        <li><a href="#main_at_your_service">Services</a></li>
+                        <li><a href="#main_images_section">Portfolio</a></li>
+                        <li><a href="#main_form_section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="toggle_menu">
+                <button onclick="toggle_ul()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- nav small version -->
+
+    <!-- header -->
+    <header class="flex">
+        <section class="flex">
+            <h1>Your Favorite Place for Free Bootstrap Themes</h1>
+            <hr>
+            <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme
+                and start customizing, no strings attached!</p>
+            <button class="scroll-btn" data-target="#main__orange_section">Find Out More</button>
+        </section>
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main>
+        <section class="flex main__orange_section" id="main__orange_section">
+            <div class="flex container main__orange_section_container">
+                <div class="flex main__orange_section__textbox">
+                    <h2>We've got what you need!</h2>
+                    <hr>
+                    <p>Start Bootstrap has everything you need to get your new website up and running in no time! Choose
+                        one
+                        of our open source, free to download, and easy to use themes! No strings attached!</p>
+                    <button class="scroll-btn" data-target="#main_at_your_service">GET STARTED!</button>
+                </div>
+            </div>
+        </section>
+        <section class="flex main_at_your_service" id="main_at_your_service">
+            <div class="flex container main_at_your_service_container">
+                <h2>At Your Service</h2>
+                <hr>
+                <div class="flex main_at_your_service_cards">
+                    <div class="flex main_at_your_service_cards__item">
+                        <i class="fa-regular fa-gem"></i>
+                        <h3>Sturdy Themes</h3>
+                        <p>Our themes are updated regularly to keep them bug free!</p>
+                    </div>
+                    <div class="flex main_at_your_service_cards__item">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h3>Up to Date</h3>
+                        <p>All dependencies are kept current to keep things fresh.</p>
+                    </div>
+                    <div class="flex main_at_your_service_cards__item">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Ready to Publish</h3>
+                        <p>You can use this design as is, or you can make changes!</p>
+                    </div>
+                    <div class="flex main_at_your_service_cards__item">
+                        <i class="fa-regular fa-heart"></i>
+                        <h3>Made with Love</h3>
+                        <p>Is it really open source if it's not made with love?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex main_images_section" id="main_images_section">
+            <div class="main_images_section_item item1">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+            <div class="main_images_section_item item2">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+            <div class="main_images_section_item item3">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+            <div class="main_images_section_item item4">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+            <div class="main_images_section_item item5">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+            <div class="main_images_section_item item6">
+                <div class="hidden">
+                    <div>CATEGORY</div>
+                    <div>Project Name</div>
+                </div>
+            </div>
+        </section>
+        <section class="flex main_download_section">
+            <h2>Free Download at Start Bootstrap!</h2>
+            <button>DOWNLOAD NOW!</button>
+        </section>
+        <section class="main_form_section" id="main_form_section">
+            <div class="flex container main_form_section_container">
+                <h2>Let's Get In Touch!</h2>
+                <hr>
+                <p>Ready to start your next project with us? Send us a messages and we will get back to you as soon as
+                    possible!</p>
+                <form action="" class="flex">
+                    <input required type="text" id="full_name">
+                    <label for="full_name" class="full_name">Full Name</label>
+                    <input required type="email" id="email_address">
+                    <label for="email_address" class="email_address">Email Address</label>
+                    <input required type="tel" id="phone_number">
+                    <label for="phone_number" class="phone_number">Phone Number</label>
+                    <textarea name="" id="textarea">
+                    </textarea>
+                    <label for="textarea" class="textarea">Message</label>
+                    <button type="submit">SUBMIT</button>
+                </form>
+                <div class="flex">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
